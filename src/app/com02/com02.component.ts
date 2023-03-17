@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-com02',
@@ -9,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Com02Component implements OnInit {
 
+  // @Input("user") userName: string = ""
+  @Input() user: string = ""
+  @Output() userChange = new EventEmitter()
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  btnClick() {
+    this.userChange.emit(new Date().getTime())
   }
 
 }

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +19,8 @@ import { Module02Module } from './module02/module02.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Module02Module
+    Module02Module,
+    FormsModule
   ],
   providers: [
     RoleGuard,
