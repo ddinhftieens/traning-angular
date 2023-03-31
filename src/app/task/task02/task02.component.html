@@ -1,0 +1,22 @@
+<app-task02-search (btnClick)="btnClick($event)"></app-task02-search>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of list; let odd = odd;" [style.color]="odd ? 'red' : 'green'">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.address}}</td>
+            <td>{{convertGender(item.gender)}}</td>
+        </tr>
+        <tr *ngIf="list.length == 0">
+            <td colspan="4">No data</td>
+        </tr>
+    </tbody>
+</table>

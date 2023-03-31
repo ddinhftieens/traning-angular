@@ -12,15 +12,20 @@
   "dependencies": {
     "@angular/animations": "^14.1.0",
     "@angular/common": "^14.1.0",
+    "@angular/cdk": "^14.1.2",
     "@angular/compiler": "^14.1.0",
     "@angular/core": "^14.1.0",
     "@angular/forms": "^14.1.0",
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@angular/material": "^14.1.2",
+    "ng2-cookies": "^1.0.12",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "primeicons": "^5.0.0",
+    "primeng": "^14.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.0",

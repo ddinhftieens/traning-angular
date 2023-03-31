@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,10 @@ import { Com04Component } from './com04/com04.component';
 import { DirecCusDirective } from './directive/direc-cus.directive';
 import { Com05Component } from './com05/com05.component';
 import { Com06Component } from './com06/com06.component';
+import { PipesCommonComponent } from './pipes-common/pipes-common.component';
+import { PipeCusPipe } from './pipes/pipe-cus.pipe';
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +29,17 @@ import { Com06Component } from './com06/com06.component';
     Com04Component,
     DirecCusDirective,
     Com05Component,
-    Com06Component
+    Com06Component,
+    PipesCommonComponent,
+    PipeCusPipe,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     Module02Module,
+    HttpClientModule,
+    BrowserAnimationsModule,
     FormsModule
   ],
   providers: [
