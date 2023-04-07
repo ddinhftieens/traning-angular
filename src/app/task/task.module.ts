@@ -14,6 +14,7 @@ import { EmpListComponent } from './emp-list/emp-list.component';
 import { EmpDetailComponent } from './emp-detail/emp-detail.component';
 import { EmployeeService } from '../services/employee.service';
 import { Task01WComponent } from './task01/task01-w/task01-w.component';
+import { EmailValidateDirective } from '../directive/email-validate.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { Task01WComponent } from './task01/task01-w/task01-w.component';
     Task02SearchComponent,
     EmpListComponent,
     EmpDetailComponent,
-    Task01WComponent
+    Task01WComponent,
+    EmailValidateDirective
   ],
   imports: [
     CommonModule,

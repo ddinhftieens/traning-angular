@@ -19,6 +19,7 @@ import { PipesCommonComponent } from './pipes-common/pipes-common.component';
 import { PipeCusPipe } from './pipes/pipe-cus.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorComponent } from './error/error.component';
+// import { EmailValidateDirective } from './directive/email-validate.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ErrorComponent } from './error/error.component';
     Com06Component,
     PipesCommonComponent,
     PipeCusPipe,
-    ErrorComponent
+    ErrorComponent,
+    // EmailValidateDirective
   ],
   imports: [
     BrowserModule,
